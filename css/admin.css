@@ -1,0 +1,250 @@
+:root {
+  --primary: rgb(0, 136, 255);
+  --bg: #0c0101;
+  --input-bg: #1a1a1a;
+  --input-border: #444;
+  --focus-border: var(--primary);
+  --button-bg: var(--primary);
+  --button-hover-bg: #005bb5;
+  --label-color: var(--primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Admin Header */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.admin-header .admin-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.admin-header .admin-logo span {
+  color: aqua;
+}
+
+.admin-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+
+/* Admin Panel */
+.admin-panel {
+  padding: 8rem 7% 2rem;
+}
+
+.admin-section {
+  margin-bottom: 3rem;
+}
+
+.admin-section h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+/* Admin Form */
+.admin-form {
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--label-color);
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="file"]:focus {
+  border-color: var(--focus-border);
+  background-color: #222;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="file"]::placeholder {
+  color: #aaa;
+}
+
+.form-group:hover label {
+  color: var(--focus-border);
+}
+
+.form-group input[type="text"]:hover,
+.form-group input[type="file"]:hover {
+  border-color: var(--focus-border);
+}
+
+/* Button Styling */
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--button-bg);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.btn.logout {
+  margin-left: 1rem;
+}
+
+/* Table Styling */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.admin-table th, .admin-table td {
+  padding: 1rem;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.admin-table tbody tr:nth-child(odd) {
+  background-color: #333;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: #444;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1rem;
+}
