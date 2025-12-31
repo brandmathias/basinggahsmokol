@@ -73,12 +73,12 @@ Program Studi **Teknik Informatika – Universitas Sam Ratulangi**.
 
 ## 🖼️ Cuplikan Tampilan
 
-> Tambahkan file screenshot ke folder `asset/` lalu gunakan path berikut:
-
-```md
+### 🖼️ User View
 ![User View](asset/TampilanUser.png)
+
+### 🧑‍💼 Admin View
 ![Admin View](asset/TampilanAdmin.png)
-```
+
 
 ---
 
