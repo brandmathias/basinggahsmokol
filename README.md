@@ -71,12 +71,12 @@ Program Studi **Teknik Informatika – Universitas Sam Ratulangi**.
 
 ---
 
-## 🖼️ Cuplikan Tampilan
+## 🖼️ Tampilan Aplikasi
 
-### 🖼️ User View
+### 👤 Tampilan User
 ![User View](asset/TampilanUser.png)
 
-### 🧑‍💼 Admin View
+### 👨‍🍳 Tampilan Admin
 ![Admin View](asset/TampilanAdmin.png)
 
 
