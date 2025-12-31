@@ -75,7 +75,7 @@ Program Studi **Teknik Informatika – Universitas Sam Ratulangi**.
 
 > Tambahkan file screenshot ke folder `asset/` lalu gunakan path berikut:
 
-```md
+md
 ![User View](asset/TampilanUser.png)
 ![Admin View](asset/TampilanAdmin.png)
 ```
